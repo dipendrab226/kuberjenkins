@@ -1,0 +1,9 @@
+- hosts: masters
+  become: yes
+  
+  tasks:
+   - name: create deployment 
+   - shell: kubectl create -f /home/dibs/lab10.yaml
+
+   - name: create service
+   - shell: kubectl create -f /home/dibs/lab10-service.yaml
