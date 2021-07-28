@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lab-10-deploy 
+  labels:
+    app: web 
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: express-demo 
+          image: dibsbharatidocker/express-demo:lab10
+          ports:
+            - containerPort: 4000

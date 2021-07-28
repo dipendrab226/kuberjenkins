@@ -1,0 +1,5 @@
+[masters]
+192.168.56.102 ansible_user=dibs ansible_sudo_pass=2632 ansible_python_interpreter=/usr/bin/python3
+
+[workers]
+192.168.56.104 ansible_user=dibs ansible_sudo_pass=2632 ansible_python_interpreter=/usr/bin/python3 
